@@ -1,7 +1,14 @@
-print(" First part answer is; ",
+print(
+    " First part answer is; ",
     max(
         enumerate(
-            [sum(map(int, elf.split("\n"))) for elf in __import__("pathlib").Path("data.txt").read_text().split("\n\n")]
+            [
+                sum(map(int, elf.split("\n")))
+                for elf in __import__("pathlib")
+                .Path("data.txt")
+                .read_text()
+                .split("\n\n")
+            ]
         ),
         key=lambda c: c[1],
     )[1],
@@ -14,12 +21,15 @@ print(" First part answer is; ",
                 enumerate(
                     [
                         sum(map(int, elf.split("\n")))
-                        for elf in __import__("pathlib").Path("data.txt").read_text().split("\n\n")
+                        for elf in __import__("pathlib")
+                        .Path("data.txt")
+                        .read_text()
+                        .split("\n\n")
                     ]
                 ),
                 key=lambda c: c[1],
                 reverse=True,
             )[:3]
         ]
-    )
+    ),
 )

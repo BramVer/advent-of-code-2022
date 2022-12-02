@@ -31,13 +31,6 @@ paper vs  scissors
 scissors vs rock
 2 - 0 => 2 -> win
 
-0.3333  - A
-0.6666  - B
-1.0     - C
-1.3333  - X
-1.6666  - Y
-2.0     - Z
-
 0 == DRAW
 1 == LOSE
 -2 == LOSE
@@ -45,8 +38,8 @@ scissors vs rock
 2 == WIN
 """
 
-
 print(
+    " First part output:\t",
     sum(
         list(
             map(
@@ -88,5 +81,7 @@ print(
                 ],
             )
         )
-    )
+    ),
+    "Second part output:\t",
+    "--- NOTHING ---",
 )
